@@ -1,19 +1,10 @@
 import React, { Component } from 'react';
+import Contact from './Contact';
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            name: ''
-        };
-    }
-
     render() {
         return (
-            <div>
-                <button onClick={() => {this.setState({name: 'flowkater'});}}>Click Me</button>
-                <h1>Hello!!@!! {this.state.name}</h1>
-            </div>
+            <Contact/>
         );
     }
 }
