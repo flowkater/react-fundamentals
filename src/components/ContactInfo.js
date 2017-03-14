@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class ContactInfo extends Component {
     render() {
         return (
-            <div>
-            {this.props.contact.name}  {this.props.contact.phone}
+            <div onClick={this.props.onClick}>
+            {this.props.contact.name}
             </div>
         );
     }
